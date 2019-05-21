@@ -13,9 +13,9 @@ school_classes = [
 
 item = {}
 _sum = 0
-_n = 0
+_len = 0
 for item in school_classes:
     _sum += sum(item['scores'])
-    n += 1
+    _len += len(item['scores'])
 
-print ('{}{}'.format('The medium of scores in school:',_sum/n))
+print ('{}{}'.format('The medium of scores in school:',_sum/_len))
