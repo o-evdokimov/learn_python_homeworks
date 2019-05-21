@@ -12,5 +12,10 @@ school_classes = [
 ]
 
 item = {}
+_sum = 0
+_n = 0
 for item in school_classes:
-    print(item)
+    _sum += sum(item[scores])
+    n += 1
+
+print ('{}{}'.format('The medium of scores in school:',_sum/n))
