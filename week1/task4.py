@@ -4,9 +4,9 @@
 
 def ask_user():
     answer=''
-    while answer != 'Good' {
+    while answer != 'Good':
         answer = input('How are you?')
-    }
+    
 
 ### Main ###
 
