@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 
+
 ### Main ###
 
 school_classes = [
