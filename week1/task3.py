@@ -11,6 +11,7 @@ school_classes = [
     {'school_class':'4e','scores':[3,4,5,5,2]},   
 ]
 
+
 item = {}
 _sum = 0
 _len = 0
