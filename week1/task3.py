@@ -18,4 +18,4 @@ for item in school_classes:
     _sum += sum(item['scores'])
     _len += len(item['scores'])
 
-print ('{}{}{}{}'.format('The medium of scores in school=',_sum/_len))
+print ('{}{}'.format('The medium of scores in school=',_sum/_len))
