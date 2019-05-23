@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-
 ### Main ###
 
 school_classes = [
@@ -19,4 +18,4 @@ for item in school_classes:
     _sum += sum(item[scores])
     n += 1
 
-print ('{}{}'.format('The medium of scores in school:',_sum/n))
+print ('{}{}'.format('The medium of scores in school:',_sum,n))
