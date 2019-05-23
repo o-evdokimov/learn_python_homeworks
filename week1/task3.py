@@ -15,7 +15,10 @@ item = {}
 _sum = 0
 _len = 0
 for item in school_classes:
-    _sum += sum(item['scores'])
-    _len += len(item['scores'])
+    _sum = sum(item['scores'])
+    _sum_total = _sum_total + _sum
+    _len = len(item['scores'])
+    _len_total = _len_total + _len
+    print ('Score of class {}{'is'}{}).format(item['school_class'],' is ',_sum/_len,))
 
-print ('{}{}'.format('The medium of scores in school=',_sum/_len))
+print ('{}{}'.format('The medium of scores in school=',_sum_total/_len_total))
