@@ -9,16 +9,16 @@ def ask_user():
 
 def ask_program():
     dialog = {
-            'How are you?':"I'm fine",
-            'What are you doing?':"I'm coding"
+            'how are you?':"I'm fine",
+            'what are you doing?':"I'm coding",
+            'bye':'Ok. Bye!'
     }
     question=''
     while question.lower() != 'bye':
+        question = input().lower()
         try:
-            question = input()
-        except KeyError: 
-            print ("Exuse me. I don't understand you")
-        print('{}'.format(dialog[question]))
+            print('{}'.format(dialog[question]))
+        except KeyError:         print ("Exuse me. I don't understand you")
     
 
 ### Main ###
