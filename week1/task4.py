@@ -12,6 +12,6 @@ def ask_user():
 
 print('1. ask_user or 2. ask_program')
 
-select = input('Select 1 or 2 ?')
+select = int(input('Select 1 or 2 ? '))
 
 if select == 1: ask_user()
