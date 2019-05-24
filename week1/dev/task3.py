@@ -42,6 +42,7 @@ for item in school_classes:
     _sum_total = _sum_total + _sum
     _len_total = _len_total + _len # а вот это можно не считать потому что len_total == len(school_classes) :)
     print ('Score of class {} = {}'.format(item['school_class'], _sum/_len))
+    print ('Score of class {} = {}'.format(item['school_class'], _sum/len(school_classes)))
 
 print ('-'*30)
 print ('{}{}'.format('The medium of scores in school = ',_sum_total/_len_total))
