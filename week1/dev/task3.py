@@ -30,8 +30,8 @@ item = {}
 #_sum = 0
 #_len = 0
 # ^ а вот эти две перемменые можно вообще и не объявлять тут
-#_sum_total = 0
-#_len_total = 0
+_sum_total = 0
+_len_total = 0
 
 for item in school_classes:
     # потому что они все равно переопределяются тут
