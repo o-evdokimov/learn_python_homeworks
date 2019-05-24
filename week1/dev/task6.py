@@ -20,6 +20,9 @@ def get_sum (i1, i2):
 
 ### Main ###
 
-my_int1 = input('Input integer #1: ')
-my_int2 = input('Input integer #2: ')
+try:
+    my_int1 = input('Input integer #1: ')
+    my_int2 = input('Input integer #2: ')
+except KeyboardInterrupt:
+	exit()
 get_sum(my_int1, my_int2)
