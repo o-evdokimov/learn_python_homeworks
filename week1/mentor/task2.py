@@ -2,25 +2,20 @@
 
 
 def get_string_compare(str1,str2):
-    # в задании довольно размыто написано, не уверен надо было проверять на isdigit (потому что строка '123' все еще строка)
-    # кстати, оно упадет если в функцию явно передать не str (потому что isdigit есть только у str)
-    if not (str1.isdigit()==False and str2.isdigit()==False and isinstance(str1, str) and isinstance(str2, str)): # после двоеточия у функции конечно можно не перносить каретку, но не нужно
-        # кстати, почитай еще про any(), очень удобная штука для объединения условий
+    # не надо сравнивать с False, выражение само по себе булево
+    # str1.isdigit() упадет в ошибку если там буде не строка а число
+    if not (str1.isdigit()==False and str2.isdigit()==False and isinstance(str1, str) and isinstance(str2, str)): 
+        # Все же лучше делать перенос строки :(
         return 0
     if str1 == str2:
-         return 1
-    if len(str1) > len(str2): 
+        return 1
+    if len(str1) > len(str2):
         return 2 
-    if str2 == 'learn': 
+    if str2=='learn':
         return 3
-    # задание просила вернуть None, хоть и неявно :)
     return 4
-
-### Main ### ???
-
-# дальше ок, но по заданию нам просто требуется модуль
-# чтоьы его оттестить, можно не писать код с inputами, а просто написать несколько вызовов с разными условиями (юнит тестирование), можно даже прикрутить assert, если очень захочется
-# print(get_string_compare(1, 'строка') или assert get_string_compare(1, 'строка') == 0, 'должно вернуть 0'
+    
+### Main ###
 
 definition = [
     'Type is not STR',
