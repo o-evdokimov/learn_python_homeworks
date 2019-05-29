@@ -4,6 +4,14 @@
 #
 # Напечатайте в консоль даты: вчера, сегодня, месяц назад
 # Превратите строку "01/01/17 12:10:03.234567" в объект datetime
+#
+# Output:
+#
+# Today: 2019-05-30
+# Yesterday: 2019-05-29
+# Month ago: 2019-04-30
+# datetime: 2017-01-01 12:10:03  type: <class 'datetime.datetime'>
+
 
 from datetime import date, datetime, timedelta
 import dateutil.relativedelta
