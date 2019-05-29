@@ -28,5 +28,5 @@ my_date_new = my_date + ' ' + my_time
 dt = datetime.strptime(my_date_new, "%d/%m/%Y %H:%M:%S")
 
 
-print ('\nToday: {}\nYesterday: {}\nMonth ago: {}\ndatetime: {}\n'.format(date_now, date_yesterday, date_month_ago, dt))
+print ('\nToday: {}\nYesterday: {}\nMonth ago: {}\ndatetime: {}  type: {}\n'.format(date_now, date_yesterday, date_month_ago, dt, type(dt)))
 
