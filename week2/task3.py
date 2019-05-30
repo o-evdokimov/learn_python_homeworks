@@ -12,7 +12,14 @@
 #
 # Output:
 #
+# name,age,job
 #
+# Маша,25,Scientist
+#
+# Вася,8,Programmer
+#
+# Эдуард,48,Big boss
+
 
 import csv
 
@@ -24,8 +31,9 @@ list_of_dicts = [
 
 
 with open ('csv_file.csv', 'w', encoding = 'utf-8') as csvfile:
-    tops = ['name ','age','job']
-    reader = csv.DictReader (csvfile, tops, delimiter=',')
-    for row in reader:
-        csvfile.write(row)
-        
+    tops = ['name','age','job']
+    writer = csv.DictWriter (csvfile, tops, delimiter=',')
+    writer.writeheader()
+
+    for row in list_of_dicts:
+        writer.writerow(row)
