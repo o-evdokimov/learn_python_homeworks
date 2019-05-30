@@ -23,18 +23,10 @@ date_month_ago = (date_now + dateutil.relativedelta.relativedelta(months=-1)).st
 date_now = datetime.today().strftime('%Y-%m-%d')
 
 #2
-my_date_old = '01/01/17 12:10:03.234567'
-my_date_split = my_date_old.split(' ')
-my_date = my_date_split[0]
-my_time = my_date_split[1].split('.')[0]
-my_year_split = my_date.split('/')
-my_year = my_year_split[2]
-my_year_new = '20'+ my_year
-my_date = my_date.replace(my_year,my_year_new,1)
-my_date_new = my_date + ' ' + my_time
+my_date_string = '01/01/17 12:10:03.234567'
 
-dt = datetime.strptime(my_date_new, "%d/%m/%Y %H:%M:%S")
-
-
+dt = datetime.strptime(my_date_string, "%d/%m/%y %H:%M:%S.%f")
 print ('\nToday: {}\nYesterday: {}\nMonth ago: {}\ndatetime: {}  type: {}\n'.format(date_now, date_yesterday, date_month_ago, dt, type(dt)))
+
+
 
